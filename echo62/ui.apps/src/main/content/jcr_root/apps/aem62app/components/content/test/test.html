@@ -1,0 +1,14 @@
+<div> Test Component </div>
+
+<h1 data-sly-test="${properties.text}">
+	${properties.text}
+</h1>
+
+<sly data-sly-test.varone="${properties.text}"/>
+
+<div style="color:red;">${varone}</div>
+
+<sly data-sly-use.test="com.aem62app.core.models.Test">
+	This is the value of text from Sling Model : ${test.text}
+</sly>
+
